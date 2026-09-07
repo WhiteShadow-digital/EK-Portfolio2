@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, ChevronRight, Zap, Sprout, Heart, Building2 } from 'lucide-react';
+import { ExternalLink, ChevronRight, Zap, Sprout, Heart, Building2, Github } from 'lucide-react';
 
 const connections = [
   {
@@ -44,6 +44,7 @@ const connections = [
     ],
     tech: ['Python', 'MQTT', 'ESP32', 'Raspberry Pi', 'Oracle APEX', 'Database Systems'],
     featured: false,
+    repo: 'https://github.com/LBuyana23/arc-smart-agric-data',
   },
   {
     id: '03',
@@ -257,17 +258,29 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Project link */}
-              {currentProject.link && (
-                <a
-                  href={currentProject.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary inline-flex items-center gap-3"
-                >
-                  <ExternalLink size={15} /> View Live Project
-                </a>
-              )}
+              {/* Project links */}
+              <div className="flex flex-wrap gap-3">
+                {currentProject.link && (
+                  <a
+                    href={currentProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary inline-flex items-center gap-3"
+                  >
+                    <ExternalLink size={15} /> View Live Project
+                  </a>
+                )}
+                {currentProject.repo && (
+                  <a
+                    href={currentProject.repo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 border border-white/15 text-charcoal-200 font-display font-bold uppercase tracking-widest text-xs px-6 py-4 hover:border-crimson hover:text-crimson transition-all duration-200"
+                  >
+                    <Github size={15} /> View Repository
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </div>

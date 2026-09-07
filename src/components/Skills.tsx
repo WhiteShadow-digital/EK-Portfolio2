@@ -44,7 +44,7 @@ const skillGroups = [
     id: 'pro',
     icon: <Users size={18} />,
     label: 'Professional Skills',
-    color: 'from-violet-900/20 to-transparent',
+    color: 'from-crimson/20 to-transparent',
     skills: [
       'Analytical Problem-Solving', 'Technical Communication', 'Non-Technical Communication',
       'Collaborative Teamwork', 'Active Listening', 'Presentation', 'Interpersonal Communication',

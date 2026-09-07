@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { User, Layers, Cpu, MessageSquare } from 'lucide-react';
+import { User, Layers, Cpu, MessageSquare, Target } from 'lucide-react';
 
 const approach = [
   { step: 'Understand', desc: 'Gather all relevant context from the user or system.' },
@@ -95,6 +95,19 @@ export default function About() {
             <div ref={addRef(3)} className="reveal mt-6 flex items-center gap-3">
               <span className="section-label text-[10px]">Languages:</span>
               <span className="font-body text-sm text-charcoal-200">English &nbsp;·&nbsp; Afrikaans</span>
+            </div>
+
+            {/* Career direction */}
+            <div className="mt-8 border border-crimson/25 bg-crimson/5 p-5">
+              <div className="flex items-start gap-4">
+                <Target size={20} className="mt-0.5 flex-shrink-0 text-crimson" />
+                <div>
+                  <p className="section-label text-[10px] mb-2">Career Direction</p>
+                  <p className="font-body text-sm leading-relaxed text-charcoal-200">
+                    Building a career in IT support and information systems, with a long-term focus on service improvement, practical automation, responsible AI and secure technology solutions.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 

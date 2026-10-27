@@ -48,6 +48,26 @@ const connections = [
   },
   {
     id: '03',
+    icon: <Github size={22} />,
+    title: 'SLA OPS — IT HELPDESK TASK & SLA TRACKER',
+    subtitle: 'IT Helpdesk Task and SLA Tracking System',
+    categories: ['IT SUPPORT', 'SLA', 'PRODUCTIVITY'],
+    status: 'COMPLETED',
+    statusColor: 'text-emerald-400 border-emerald-400/30 bg-emerald-400/5',
+    description:
+      'A focused IT helpdesk operations tool for organizing support tasks, monitoring service-level commitments and keeping ticket work visible from intake through completion.',
+    details: [
+      'IT helpdesk task tracking',
+      'SLA monitoring and prioritization',
+      'Clear operational workflow visibility',
+      'Repository-backed project documentation',
+    ],
+    tech: ['IT Support', 'Task Management', 'SLA Tracking'],
+    featured: false,
+    repo: 'https://github.com/WhiteShadow-digital/SLA-Ops',
+  },
+  {
+    id: '04',
     icon: <Heart size={22} />,
     title: 'AI & HEALTHCARE EXPLORATION',
     subtitle: 'Generative AI in Healthcare Contexts',
@@ -67,7 +87,7 @@ const connections = [
     featured: false,
   },
   {
-    id: '04',
+    id: '05',
     icon: <Building2 size={22} />,
     title: 'BUSINESS & ENTERPRISE SYSTEMS',
     subtitle: 'Academic & Prototype Applications',

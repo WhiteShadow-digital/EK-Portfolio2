@@ -59,6 +59,61 @@ const certGroups: CertGroup[] = [
     ],
   },
   {
+    id: 'it-support',
+    label: 'IT Support & Networking',
+    count: 8,
+    certs: [
+      {
+        title: 'Hardware and Upgrade Support',
+        issuer: 'Cisco Networking Academy / CAPACITI',
+        year: 'September 2026',
+        verifyUrl: '/documents/certifications/Hardware_and_Upgrade_Support_certificate_ethan-krewu-capaciti-org-za_f7d733f6-ea.pdf',
+      },
+      {
+        title: 'Operating Systems Support',
+        issuer: 'Cisco Networking Academy / CAPACITI',
+        year: 'August 2026',
+        verifyUrl: '/documents/certifications/Operating_Systems_Support_certificate_ethan-krewu-capaciti-org-za_eb8db3c4-574c-.pdf',
+      },
+      {
+        title: 'IT Security: Defense against the Digital Dark Arts',
+        issuer: 'Google / Coursera',
+        year: 'October 2026',
+        verifyUrl: 'https://www.coursera.org/account/accomplishments/records/BLNJNL34MHQG',
+      },
+      {
+        title: 'Accelerate Your Job Search with AI',
+        issuer: 'Google / Coursera',
+        year: 'October 2026',
+        verifyUrl: 'https://www.coursera.org/account/accomplishments/records/362H6BMBPDQB',
+      },
+      {
+        title: 'System Administration and IT Infrastructure Services',
+        issuer: 'Google / Coursera',
+        year: 'October 2026',
+        verifyUrl: 'https://www.coursera.org/account/accomplishments/records/ZVYXYBZZ9AAX',
+      },
+      {
+        title: 'Operating Systems and You: Becoming a Power User',
+        issuer: 'Google / Coursera',
+        year: 'October 2026',
+        verifyUrl: 'https://www.coursera.org/account/accomplishments/records/DQZ6BSONDFC8',
+      },
+      {
+        title: 'The Bits and Bytes of Computer Networking',
+        issuer: 'Google / Coursera',
+        year: 'October 2026',
+        verifyUrl: 'https://www.coursera.org/account/accomplishments/records/P3V91X2RKBNM',
+      },
+      {
+        title: 'IT Support Course Certificate',
+        issuer: 'Google / Coursera',
+        year: 'October 2026',
+        verifyUrl: 'https://www.coursera.org/account/accomplishments/records/IGSLR60EYSMS',
+      },
+    ],
+  },
+  {
     id: 'cybersecurity',
     label: 'IT & Cybersecurity',
     count: 1,
@@ -110,7 +165,7 @@ function CertCard({ cert }: { cert: Cert }) {
 }
 
 function CertGroupPanel({ group }: { group: CertGroup }) {
-  const [open, setOpen] = useState(group.id === 'ai');
+  const [open, setOpen] = useState(group.id === 'ai' || group.id === 'it-support');
 
   return (
     <div className="border border-white/8 overflow-hidden">
